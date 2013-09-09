@@ -1,0 +1,13 @@
+html,body{height:100%;font-size:14px}
+a{text-decoration:none}
+#header{display:inline-block;vertical-align:top;margin:15px}#header h1{vertical-align:top;margin:0}
+#header a{bottom:6px;left:4px;position:relative;vertical-align:bottom}
+#topRow{height:70px;white-space:nowrap}#topRow>div,#topRow h1{display:inline-block}
+#sliderContainer{margin:21px 15px 17px 15px}#sliderContainer .dial{display:none;position:relative;bottom:20px;background:#fff;font-size:13px}
+#sliderContainer #extendedSlider>div{margin:0 5px;display:inline-block}
+#sliderContainer #extendedSlider #slider{width:675px;display:inline-block;background-color:#bb2201;background:-webkit-linear-gradient(left, #bb2201, #91ff42);background:-moz-linear-gradient(left, #bb2201, #91ff42);background:-ms-linear-gradient(left, #bb2201, #91ff42);background:-o-linear-gradient(left, #bb2201, #91ff42)}#sliderContainer #extendedSlider #slider .ui-slider-range{-webkit-opacity:0;-moz-opacity:0;opacity:0}
+#sliderContainer #years{text-align:center}#sliderContainer #years div{display:inline-block;width:44px;text-align:center;font-size:14px}
+#about{float:right;font-size:larger}
+#map{position:absolute;left:0;right:0;bottom:0;top:70px}
+#bottom{position:absolute;bottom:0;left:0;right:0;height:20px;text-align:center}
+.articleTitle{font-size:larger !important;font-weight:bold !important}

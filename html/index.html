@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<title>HumanMap</title>
+	<meta name='description' content="Historical military conflicts on a map">
+	<meta charset="utf-8"> 
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet/less" type="text/css" href="style.less" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBXOST8h9lJ3aSz05jQe5xMNlNzXAW3d0&sensor=false"></script>
+	<script src="https://gmaps-utility-library.googlecode.com/svn/trunk/mapiconmaker/1.0/src/mapiconmaker.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script> 
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.4.1/less.min.js"></script>
+	<script src='eventswithreferences.js'></script>
+	<script src='main.js'></script>
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=463448330379993";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div id='topRow'>
+		<div id='header'>
+			<h1>HumanMap</h1>
+			<a href='http://scottrogowski.com/'>About</a>
+		</div>
+		<div id='sliderContainer'>
+			<div id='extendedSlider'>
+				<div>BCE</div>
+				<div id='slider'></div>
+				<div>CE</div>
+			</div>
+			<div id="years">
+				<div>1500</div>
+				<div>1250</div>
+				<div>1000</div>
+				<div>750</div>
+				<div>500</div>
+				<div>250</div>
+				<div>0</div>
+				<div>250</div>
+				<div>500</div>
+				<div>750</div>
+				<div>1000</div>
+				<div>1250</div>
+				<div>1500</div>
+				<div>1750</div>
+				<div>2000</div>
+				
+			</div>
+		</div>
+		<div id='about'>
+	 		<div class="fb-like" data-href="http://humanmap.org" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>			
+		</div>
+		<!--<div id='donate'>
+		<a href='https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=JB3A7BRNB5UQJ&lc=US&item_name=code2flow&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted'>Donate here!</a></div>-->
+	</div>
+	<div id='map'></div>
+	<!--<div id='bottom'> | Donate</div>-->
+
+</body>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=463448330379993";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+</html>

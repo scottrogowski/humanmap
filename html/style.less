@@ -1,0 +1,115 @@
+.opacity (@opacity: 0.5) {
+	-webkit-opacity:@opacity;
+	-moz-opacity: 	@opacity;
+	opacity: 		@opacity;
+}
+
+.gradient (@startColor: #eee, @endColor: white) {
+	background-color: @startColor;
+	background: -webkit-linear-gradient(left, @startColor, @endColor);
+	background: -moz-linear-gradient(left, @startColor, @endColor);
+	background: -ms-linear-gradient(left, @startColor, @endColor);
+	background: -o-linear-gradient(left, @startColor, @endColor);
+}
+
+
+html, body {
+	height: 100%;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#header {
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px;
+
+	h1 {
+		vertical-align: top;
+		margin: 0;
+
+	}
+
+	a {
+		bottom: 6px;
+		left: 4px;
+		position: relative;
+		vertical-align: bottom;
+	}
+}
+
+#topRow {
+	height: 70px;
+	white-space: nowrap;
+	>div, h1 {
+		display: inline-block;
+	}
+}
+
+#sliderContainer {
+	margin: 21px 15px 17px 15px;
+
+	.dial {
+		display: none;
+		position: relative;
+		bottom:20px;
+		background: white;
+		font-size: 13px;
+	}
+
+	#extendedSlider {
+		>div {
+			margin:0 5px;
+			display: inline-block;
+		}
+		#slider {
+			width: 675px;
+			display: inline-block;
+			.gradient(#bb2201, #91ff42);
+
+			.ui-slider-range {
+				.opacity(0);
+			}
+		}
+	}
+
+	#years {
+		text-align: center;
+		div {
+			display: inline-block;
+			width: 44px;
+			text-align: center;
+			font-size: 14px;
+		}
+	}
+}
+
+#about {
+	float: right;
+	font-size: larger;
+}
+
+#map {
+	position: absolute;
+	left:0;
+	right:0;
+	bottom:0px;
+	top:70px;
+}
+
+#bottom {
+	position: absolute;
+	bottom: 0;
+	left:0;
+	right:0;
+	height:20px;
+	text-align: center;
+}
+
+.articleTitle {
+	font-size: larger!important;
+	font-weight: bold!important;
+}
